@@ -14,8 +14,8 @@
                 </li>
             </ul>
             <div class="d-flex">
-                <input (keyup.enter)="searchById(txtId.value)" #txtId class="form-control me-2" type="text" placeholder="User ID">
-                <button (click)="searchById(txtId.value)" class="btn btn-outline-success" type="button">Buscar</button>
+                <input (keyup.enter)="searchById(txtId.value);txtId.value=''" #txtId class="form-control me-2" type="text" placeholder="User ID">
+                <button (click)="searchById(txtId.value);txtId.value=''" class="btn btn-outline-success" type="button">Buscar</button>
             </div>
         </div>
     </div>

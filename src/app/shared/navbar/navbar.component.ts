@@ -14,7 +14,6 @@ export class NavbarComponent implements OnInit {
   }
 
   searchById(id: string) {
-    console.log(id);
     this.router.navigateByUrl(`/user/${id}`)
   }
 
