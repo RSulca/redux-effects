@@ -16,12 +16,11 @@ export class ListUserComponent implements OnInit, OnDestroy {
   users: User[];
   loading: boolean;
   error: any;
-
   subsU: Subscription;
 
   constructor(private st: Store<AppState>) {
     this.users = [];
-    this.loading;
+    this.loading = true;
     this.error = null;
     this.subsU = this.st.select('users').subscribe(({ users, loading, error }) => {
       this.users = users;

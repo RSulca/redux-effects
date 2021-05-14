@@ -2,7 +2,11 @@
     <b>{{error.name}}</b> <br> <pre>{{error.message}}</pre> {{error.url}}
 </div>
 <div *ngIf="loading" class="loading d-flex align-items-center justify-content-center">
-    <img class="" src="../../../assets/gif/loading.gif" alt="Error">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
 </div>
 <div *ngIf="!loading && user" class="col-12">
     <div class="row">
